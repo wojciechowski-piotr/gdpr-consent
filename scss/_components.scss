@@ -1,0 +1,22 @@
+button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include screen('desktop') {
+        padding: 0;
+    }
+}
+
+.noscroll {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
