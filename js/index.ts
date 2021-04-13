@@ -7,7 +7,7 @@ import blurBg from './blurBg';
 window.addEventListener('load', () => {
     const isConsent: string = cookieStorage.getItem('consent');
 
-    if (!isConsent || isConsent === '{"confirm":false}') {
+    if (!isConsent) {
         blurBg();
         createPopup();
         vendors();
